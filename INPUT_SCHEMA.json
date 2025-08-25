@@ -1,0 +1,53 @@
+{
+  "title": "eXp Jacksonville Agents \u2192 Brevo CSV",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "startPage": {
+      "title": "Start page",
+      "type": "integer",
+      "description": "Which result page to start from (1-based).",
+      "default": 1,
+      "editor": "number"
+    },
+    "maxResultsPages": {
+      "title": "How many result pages to crawl",
+      "type": "integer",
+      "description": "Number of search result pages to visit (each usually lists many agents).",
+      "default": 1,
+      "editor": "number"
+    },
+    "location": {
+      "title": "City/Region",
+      "type": "string",
+      "default": "Jacksonville, FL",
+      "editor": "text"
+    },
+    "country": {
+      "title": "Country code",
+      "type": "string",
+      "default": "US",
+      "editor": "text"
+    },
+    "goOnePageDeep": {
+      "title": "Visit profiles (1 page deep)",
+      "type": "boolean",
+      "default": true,
+      "editor": "checkbox"
+    },
+    "outputCsv": {
+      "title": "Output CSV filename",
+      "type": "string",
+      "default": "brevo_exp_agents.csv",
+      "editor": "text"
+    }
+  },
+  "required": [
+    "startPage",
+    "maxResultsPages",
+    "location",
+    "country",
+    "goOnePageDeep",
+    "outputCsv"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "exp-agents-brevo-actor",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Scrape eXp Realty Jacksonville, FL agents (1 page deep) and export Brevo CSV.",
+  "scripts": {
+    "start": "node main.js",
+    "start:dev": "node --watch main.js"
+  },
+  "dependencies": {
+    "apify": "^3.0.0",
+    "playwright": "^1.47.0",
+    "csv-writer": "^1.6.0"
+  }
+}
