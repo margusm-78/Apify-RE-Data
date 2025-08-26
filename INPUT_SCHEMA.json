@@ -8,46 +8,41 @@
       "type": "integer",
       "description": "Which result page to start from (1-based).",
       "default": 1,
-      "editor": "number"
+      "minimum": 1
     },
     "maxResultsPages": {
       "title": "How many result pages to crawl",
       "type": "integer",
       "description": "Number of search result pages to visit (each usually lists many agents).",
       "default": 1,
-      "editor": "number"
+      "minimum": 1
     },
     "location": {
       "title": "City/Region",
       "type": "string",
       "default": "Jacksonville, FL",
-      "editor": "text"
+      "editor": "textfield"
     },
     "country": {
       "title": "Country code",
       "type": "string",
       "default": "US",
-      "editor": "text"
+      "editor": "textfield"
     },
     "goOnePageDeep": {
       "title": "Visit profiles (1 page deep)",
       "type": "boolean",
-      "default": true,
-      "editor": "checkbox"
+      "default": true
     },
     "outputCsv": {
       "title": "Output CSV filename",
       "type": "string",
       "default": "brevo_exp_agents.csv",
-      "editor": "text"
+      "editor": "textfield"
     }
   },
   "required": [
-    "startPage",
-    "maxResultsPages",
     "location",
-    "country",
-    "goOnePageDeep",
-    "outputCsv"
+    "country"
   ]
 }
