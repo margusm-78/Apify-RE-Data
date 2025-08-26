@@ -16,4 +16,4 @@ node main.js
 
 ## Deploy to Apify (GitHub Actions)
 
-Add `APIFY_TOKEN` as a repo secret and run the provided workflow or push a tag like `v1.0.0`.
+Add `APIFY_TOKEN` as a repo secret and run the provided workflow or push a tag like `v1.0.1`.
