@@ -43,6 +43,13 @@
       "description": "Filename for the Brevo-ready CSV to generate.",
       "default": "brevo_exp_agents.csv",
       "editor": "textfield"
+    },
+    "debugSample": {
+      "title": "Debug: limit profiles per search page",
+      "type": "integer",
+      "description": "Set >0 to process only N profiles per search page for faster testing.",
+      "default": 0,
+      "minimum": 0
     }
   },
   "required": [

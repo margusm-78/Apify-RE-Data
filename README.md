@@ -1,19 +1,7 @@
 # eXp Agents → Brevo CSV (Apify Actor)
 
-Scrapes **eXp Realty** agents in **Jacksonville, FL** (or any location you set) and produces a Brevo-ready CSV with columns:
+**Update:** Robust link discovery + click-through fallback for SPA pages where the agent photo must be clicked.
 
-- `EMAIL`
-- `FIRSTNAME`
-- `LASTNAME`
-- `SMS` (phone)
-
-## Run locally
-
-```bash
-npm install
-node main.js
-```
-
-## Deploy to Apify (GitHub Actions)
-
-Add `APIFY_TOKEN` as a repo secret and run the provided workflow or push a tag like `v1.0.1`.
+- Uses Playwright + Crawlee
+- Outputs `brevo_exp_agents.csv` (EMAIL, FIRSTNAME, LASTNAME, SMS)
+- Set `debugSample` to 2–3 to test quickly.
