@@ -13,30 +13,34 @@
     "maxResultsPages": {
       "title": "How many result pages to crawl",
       "type": "integer",
-      "description": "Number of search result pages to visit (each usually lists many agents).",
+      "description": "How many search result pages to crawl (pagination depth).",
       "default": 1,
       "minimum": 1
     },
     "location": {
       "title": "City/Region",
       "type": "string",
+      "description": "City/region to search agents for (e.g., \"Jacksonville, FL\").",
       "default": "Jacksonville, FL",
       "editor": "textfield"
     },
     "country": {
       "title": "Country code",
       "type": "string",
+      "description": "Two-letter country code for search (e.g., \"US\").",
       "default": "US",
       "editor": "textfield"
     },
     "goOnePageDeep": {
       "title": "Visit profiles (1 page deep)",
       "type": "boolean",
+      "description": "Visit each found agent profile (one page deep) to extract details.",
       "default": true
     },
     "outputCsv": {
       "title": "Output CSV filename",
       "type": "string",
+      "description": "Filename for the Brevo-ready CSV to generate.",
       "default": "brevo_exp_agents.csv",
       "editor": "textfield"
     }
